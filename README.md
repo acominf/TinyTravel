@@ -1,12 +1,13 @@
 ### Objetivo del juego/aplicación
-El objetivo del juego/aplicación es ...
+El objetivo es llegar lo más lejos posible y obtener el mayor número de puntos que se pueda. 
 
 ### Descripción del juego/aplicación
-La descripción del juego/aplicación es ...
+El jugador célula recorrerá un húmedo, pegajoso y peligroso entorno dentro del cuerpo y sistemas de una criatura extraña, con el objeto de mantenerse viva dentro de la criatura, en su recorrido encontrara glóbulos blancos que le aportarón energía para seguir moviíndose, también pastillas o píldoras que incrementarán sus capacidades metabólicas permitiéndole absorber virus por un breve periodo de tiempo, encontrara virus que si llegasen a tocarla esta se morirá, a excepción de que esté potenciada con una pastilla, en este caso podría devorar al virus sin hacerse daño. La célula ganará puntos mientras su recorrido sea más y más largo a través de la criatura. Obtendrá  3 puntos por cada cierta distancia recorrida, si se come una pastilla ganará  2 y si devora a un virus obtendrá  5. 
+Existen 2 tipos de virus potencialmente peligrosos, uno el virus H de aspecto pequeño, amarillento y adormecido, este disminuirá la vida de la célula, y está el virus T de aspecto grande, grotesco y agresivo que al menor contacto con la célula esta morirá inmediatamente. 
 
 ### Clases principales y sus características
-1. Clase 1
-* caracteristica1
+1. Célula
+* T
 * caracteristica2
 * caracteristica3
 
