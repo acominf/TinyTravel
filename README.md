@@ -6,18 +6,15 @@ El jugador célula recorrerá un húmedo, pegajoso y peligroso entorno dentro de
 Existen 2 tipos de virus potencialmente peligrosos, uno el virus H de aspecto pequeño, amarillento y adormecido, este disminuirá la vida de la célula, y está el virus T de aspecto grande, grotesco y agresivo que al menor contacto con la célula esta morirá inmediatamente. 
 
 ### Clases principales y sus características
-1. Célula
-* T
-* caracteristica2
-* caracteristica3
+1. Mundo
+* Tiene los elementos del juego(Personajes, Potenciadores y elementos de entorno)
 
-2. Clase 2
-* caracteristica1
-* caracteristica2
-* caracteristica3
+2. Elemento
+* Posee atributos para los personajes y potenciadores(posicion y tamaño)
+* Dibuja los personajes y potenciadores.
 
-3. Clase 3
-* caracteristica1
+3. Personaje
+* Posee 
 * caracteristica2
 * caracteristica3
 
@@ -32,7 +29,7 @@ Existen 2 tipos de virus potencialmente peligrosos, uno el virus H de aspecto pe
 * caracteristica3
 
 ### Diagrama de clases
-![Diagrama de clases](url-del-diagrama.png)
+![Diagrama de clases](https://github.com/acominf/TinyTravel/blob/master/Imagenes/DiagramaClasesTinyTravel.png)
 
 ### Autor(es)
 El autor(es) del proyecto son:
