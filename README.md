@@ -15,16 +15,32 @@ Existen 2 tipos de virus potencialmente peligrosos, uno el virus H de aspecto pe
 
 3. Personaje
 * Posee un metodo para moverse.
-* Sobreescribe el metodo dibuja.
+* Sobreescribe el método dibuja.
 
 4. Célula
 * Contiene un atributo de tipo Pastilla.
 * Tiene un metodo para comer.
-* Sobreescribe los metodos dibuja y moverse.
+* Sobreescribe los métodos dibuja y moverse.
 
 5. Virus
 * Tiene un metodo para atacar.
-* Sobreescribe los metodos dibuja y moverse.
+* Sobreescribe los métodos dibuja y moverse.
+
+6. VT
+* Sobreescribe el método atacar.
+
+7. VH
+* Sobreescribe el método atacar.
+
+8. Potenciador
+* Sobreescribe el método dibuja. 
+
+9. Globulo
+* Sobreescribe el método dibuja.
+
+10. Pastilla
+* Posee el método poder.
+* Sobreescribe el método dibuja.
 
 ### Diagrama de clases
 ![Diagrama de clases](https://github.com/acominf/TinyTravel/blob/master/Imagenes/DiagramaClasesTinyTravel.png)
