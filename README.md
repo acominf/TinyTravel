@@ -7,34 +7,32 @@ Existen 2 tipos de virus potencialmente peligrosos, uno el virus H de aspecto pe
 
 ### Clases principales y sus características
 1. Mundo
-* Tiene los elementos del juego(Personajes, Potenciadores y elementos de entorno)
+* Tiene los elementos del juego(Personajes, Potenciadores y elementos de entorno).
 
 2. Elemento
-* Posee atributos para los personajes y potenciadores(posicion y tamaño)
+* Posee atributos para los personajes y potenciadores(posicion y tamaño).
 * Dibuja los personajes y potenciadores.
 
 3. Personaje
-* Posee 
-* caracteristica2
-* caracteristica3
+* Posee un metodo para moverse.
+* Sobreescribe el metodo dibuja.
 
-4. Clase 4
-* caracteristica1
-* caracteristica2
-* caracteristica3
+4. Célula
+* Contiene un atributo de tipo Pastilla.
+* Tiene un metodo para comer.
+* Sobreescribe los metodos dibuja y moverse.
 
-5. Clase 5
-* caracteristica1
-* caracteristica2
-* caracteristica3
+5. Virus
+* Tiene un metodo para atacar.
+* Sobreescribe los metodos dibuja y moverse.
 
 ### Diagrama de clases
 ![Diagrama de clases](https://github.com/acominf/TinyTravel/blob/master/Imagenes/DiagramaClasesTinyTravel.png)
 
 ### Autor(es)
 El autor(es) del proyecto son:
-- Nombre completo del autor 1 (@nombreUsuarioGitHub)
-- Nombre completo del autor 2 (@nombreUsuarioGitHub)
+- Alvarez Ruiz Alejandro Esaú (@AlexMethod)
+- Ibarra Cuevas Zazil Josefina (@nombreUsuarioGitHub)
 
 ### Materia(s)
 - Programación Orientada a Objetos
