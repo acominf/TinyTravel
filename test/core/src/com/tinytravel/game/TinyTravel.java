@@ -9,12 +9,24 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.ApplicationListener;
-public class TinyTravel extends ApplicationAdapter implements ApplicationListener{
+
+import java.util.ArrayList;
+
+public class TinyTravel extends ApplicationAdapter {
 	SpriteBatch batch;
 	private Celula celula;
+	private ArrayList<Globulo> arrayGlobulo;
+	private ArrayList<Virus> arrayVirus;
+	private ArrayList<Pastilla> arrayPastilla;
+	private Globulo globulo;
+	private Pastilla pastilla;
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
+		arrayGlobulo = new ArrayList<Globulo>();
+		arrayPastilla = new ArrayList<Pastilla>();
+		arrayGlobulo.add(globulo = new Globulo(200,420));
+		arrayPastilla.add(pastilla = new Invencibilidad(100,100));
 		celula = new Celula(400,420);
 	}
 
@@ -22,36 +34,15 @@ public class TinyTravel extends ApplicationAdapter implements ApplicationListene
 	public void render () {
 		Gdx.gl.glClearColor(1, 1, 1, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		int w = Gdx.graphics.getWidth(); //Obtener las dimensiones del graphico en x
-		int h = Gdx.graphics.getHeight(); //Obtener las dimensiones del graphico en y
-
-	    if(Gdx.input.isKeyPressed(Input.Keys.LEFT)){
-	    	celula.setX(celula.getX()-10);
-		}
-		if(Gdx.input.isKeyPressed(Input.Keys.RIGHT)){
-	    	celula.setX(celula.getX()+10);
-		}
-		if(Gdx.input.isKeyPressed(Input.Keys.DOWN)){
-			celula.setY(celula.getY()-10);
-		}
-		if(Gdx.input.isKeyPressed(Input.Keys.UP)){
-			celula.setY(celula.getY()+10);
-		}
-		//Restriccion
-		if(celula.getX()>=w-60){
-			celula.setX(celula.getX()-10);
-		}
-		if(celula.getX()<=0){
-			celula.setX(celula.getX()+10);
-		}
-		if(celula.getY()>=h-60){
-			celula.setY(celula.getY()-10);
-		}
-		if(celula.getY()<=0){
-			celula.setY(celula.getY()+10);
+	    celula.move();
+		//Objects Colliding
+		if(celula.isColliding(globulo)){
+			System.out.println("Objects Colliding at "+celula.getX()+" "+celula.getY());
 		}
 		batch.begin();
-		celula.render(batch);
+		celula.dibuja(batch);
+		arrayGlobulo.get(0).dibuja(batch);
+		arrayPastilla.get(0).dibuja(batch);
 		batch.end();
 	}
 	@Override
