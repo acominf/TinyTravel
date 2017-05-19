@@ -48,6 +48,8 @@ public class Globulo extends Potenciador{
         batch.draw(frameActual,x,y);
     }
     @Override
-    public void move(){}
+    public void move(){
+        this.setY(this.getY()+1);
+    }
 }
 

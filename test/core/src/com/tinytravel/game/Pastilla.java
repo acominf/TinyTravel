@@ -18,4 +18,5 @@ public abstract class Pastilla extends Potenciador{
     @Override
     public abstract void dibuja(final SpriteBatch batch);
 
+
 }

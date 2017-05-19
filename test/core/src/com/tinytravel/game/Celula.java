@@ -65,29 +65,29 @@ public class Celula extends Personaje implements ApplicationListener{
         int w = Gdx.graphics.getWidth();
         int h = Gdx.graphics.getHeight();
         if(Gdx.input.isKeyPressed(Input.Keys.LEFT)){
-            this.setX(this.getX()-10);
+            this.setX(this.getX()-2);
         }
         if(Gdx.input.isKeyPressed(Input.Keys.RIGHT)){
-            this.setX(this.getX()+10);
+            this.setX(this.getX()+2);
         }
         if(Gdx.input.isKeyPressed(Input.Keys.DOWN)){
-            this.setY(this.getY()-10);
+            this.setY(this.getY()-2);
         }
         if(Gdx.input.isKeyPressed(Input.Keys.UP)){
-            this.setY(this.getY()+10);
+            this.setY(this.getY()+2);
         }
         //Restriccion
         if(this.getX()>=w-60){
-            this.setX(this.getX()-10);
+            this.setX(this.getX()-2);
         }
         if(this.getX()<=0){
-            this.setX(this.getX()+10);
+            this.setX(this.getX()+2);
         }
         if(this.getY()>=h-60){
-            this.setY(this.getY()-10);
+            this.setY(this.getY()-2);
         }
-        if(this.getY()<=0){
-            this.setY(this.getY()+10);
+        if(this.getY()<=100){
+            this.setY(this.getY()+2);
         }
     }
     @Override
