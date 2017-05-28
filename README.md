@@ -74,7 +74,6 @@ Existen 2 tipos de virus potencialmente peligrosos, uno el virus H de aspecto pe
 ### Diagrama de clases
 ![Diagrama de clases](https://raw.githubusercontent.com/acominf/TinyTravel/master/Imagenes/DiagramaClasesTinyTravel.png)
 ![Diagrama de clases](https://github.com/acominf/TinyTravel/blob/master/Imagenes/DiagramaClasesTinyTravel.png?raw=true)
-![Diagrama de clases](https://github.com/acominf/TinyTravel/blob/master/Imagenes/DiagramaClasesTinyTravel.png)
 
 ### Autor(es)
 El autor(es) del proyecto son:
