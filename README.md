@@ -81,12 +81,15 @@ Pastillas
 ### Diagrama de clases
 ![Diagrama de clases](https://raw.githubusercontent.com/acominf/TinyTravel/master/Imagenes/Tiny%20Travel%20Inside%20Beasts.png)
 
+### Video
+https://www.youtube.com/watch?v=663337ckXik
+
 ### Autor(es)
 El autor(es) del proyecto son:
 - Alvarez Ruiz Alejandro Esaú (@AlexMethod)
 - Ibarra Cuevas Zazil Josefina (@zazilibarra)
 
- Materia(s)
+### Materia(s)
 - Programación Orientada a Objetos
 
 ### Semestre
