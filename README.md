@@ -7,19 +7,24 @@ Existen 2 tipos de virus potencialmente peligrosos, uno el virus H de aspecto pe
 
 ### Personajes
 
-Jugador
+Jugador: Es el personaje principal del juego.
+
 ![Jugador](https://raw.githubusercontent.com/acominf/TinyTravel/master/Imagenes/png1.png)
 
-Virus H
+Virus H: Decrementa 100 puntos al jugador, si el jugador tiene menos de 100 puntos muere.
+
 ![Virus H](https://raw.githubusercontent.com/acominf/TinyTravel/master/Imagenes/vir4.png)
 
-Virus T
+Virus T: Matan instantaneamente al jugador.
+
 ![Virus T](https://raw.githubusercontent.com/acominf/TinyTravel/master/Imagenes/VT.png)
 
-Globulos
+Globulos: Alimentan al jugador, da 10 puntos.
+
 ![Globulos](https://raw.githubusercontent.com/acominf/TinyTravel/master/Imagenes/Globulo.png)
 
-Pastillas
+Pastillas: Alimentan al jugador con 20 puntos.
+
 ![Pastillas](https://raw.githubusercontent.com/acominf/TinyTravel/master/Imagenes/18762418_1387050718055457_2124542227_n.png)
 
 ### Pantallas de Juego
