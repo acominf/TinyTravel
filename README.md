@@ -87,13 +87,7 @@ Pastillas: Alimentan al jugador con 20 puntos.
 ![Diagrama de clases](https://raw.githubusercontent.com/acominf/TinyTravel/master/Imagenes/Tiny%20Travel%20Inside%20Beasts.png)
 
 ### Video
-<object width="425" height="350">
-<param name="movie" value="https://www.youtube.com/watch?v=663337ckXik"></param>
-<param name="wmode" value="transparent"></param>
-<embed src="https://www.youtube.com/watch?v=663337ckXik" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350">
-</embed>
-</object>
-
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=663337ckXik"
 
 ### Autor(es)
 El autor(es) del proyecto son:
