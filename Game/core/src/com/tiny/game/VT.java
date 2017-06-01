@@ -35,6 +35,7 @@ public class VT extends Virus {
         frameActual = (TextureRegion)animacion.getKeyFrame(tiempo,true);
         batch.draw(frameActual,x,y);
     }
+    @Override
     public int getX(){
         return x;
     }
@@ -48,9 +49,6 @@ public class VT extends Virus {
         this.y=y;
     }
 
-    public void ataque(){
-
-    }
     public void move(){
         this.setY(this.getY()+1);
     }

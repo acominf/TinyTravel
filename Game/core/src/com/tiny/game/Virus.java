@@ -15,5 +15,4 @@ public abstract class Virus extends Personaje {
     public abstract void move();
     @Override
     public abstract void dibuja(SpriteBatch batch);
-    public abstract void ataque();
 }

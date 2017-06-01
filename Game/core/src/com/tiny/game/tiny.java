@@ -168,7 +168,7 @@ public class tiny extends ApplicationAdapter {
 				isCredits = false;
 				isHelp = false;
 			}
-			if(Gdx.input.isKeyPressed(Input.Keys.E)){
+			if(Gdx.input.isKeyPressed(Input.Keys.ESCAPE)){
 				player = juego.leerJugador();
 				if(this.juego.getJugador().getScore()>player.getScore()){
 					this.juego.guardarJugador();

@@ -43,7 +43,4 @@ public class F1{
         this.setY(this.getY()+1);
     }
 
-    public Texture getImage(){
-        return membrana;
-    }
 }

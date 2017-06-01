@@ -51,10 +51,6 @@ public class VH extends Virus {
         this.y=y;
     }
     @Override
-    public void ataque(){
-
-    }
-    @Override
     public void move(){
         this.setY(this.getY()+1);
 

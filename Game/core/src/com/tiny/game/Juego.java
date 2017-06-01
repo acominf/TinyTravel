@@ -25,7 +25,6 @@ public class Juego {
     private int pAuxH;
     private int pAuxT;
     private ArrayList<Globulo> arrayGlobulo;
-    private ArrayList<Virus> arrayVirus;
     private ArrayList<VH> arrayVH;
     private ArrayList<VT> arrayVT;
     private ArrayList<Pastilla> arrayPastilla;
@@ -69,9 +68,9 @@ public class Juego {
             //Se crean los arreglos
             arrayGlobulo = new ArrayList<Globulo>();
             arrayPastilla = new ArrayList<Pastilla>();
-            arrayVirus = new ArrayList<Virus>();
             arrayVH = new ArrayList<VH>();
             arrayVT = new ArrayList<VT>();
+            //jugador = new Jugador("Jugador1");
             jugador = new Jugador("Jugador1");
             //Se añaden los objetos fondo
             //En sus posiciones correspondientes
@@ -190,7 +189,7 @@ public class Juego {
         }
         batch.end();
       //Para crear mas globulos
-        if(arrayGlobulo.size()==2){
+        if(arrayGlobulo.size()<=2){
             int randomx = random.nextInt(350) +1;
             int randomy = random.nextInt(80) +1;
             arrayGlobulo.add( new Globulo(randomx,randomy));
@@ -211,12 +210,11 @@ public class Juego {
                 arrayGlobulo.remove(j);
                 this.jugador.setScore(jugador.getScore()+10);
                 puntos=Integer.toString(this.jugador.getScore());
-                System.out.println("Puntuaje: "+ this.jugador.getScore());
             }
             batch.end();
         }
         //Para crear mas Pastillas
-        if(arrayPastilla.size()== 0){
+        if(arrayPastilla.size()<= 0){
             int randomx = random.nextInt(350)+1;
             int randomy = random.nextInt(80)+1;
             arrayPastilla.add( new Invencibilidad(randomx,randomy));
@@ -236,7 +234,6 @@ public class Juego {
                 arrayPastilla.remove(i);
                 this.jugador.setScore(this.jugador.getScore()+20);
                 this.puntos=Integer.toString(this.jugador.getScore());
-                System.out.println("Puntuaje: "+ this.jugador.getScore());
             }
             batch.end();
         }
@@ -269,14 +266,13 @@ public class Juego {
                 sound1.play();
                 arrayVH.remove(i);
                 this.jugador.setScore(this.jugador.getScore()-100);
-                if(this.jugador.getScore()<0){
+                if(this.jugador.getScore()<0){ //Condicion para morir cuando su puntuaje sea menor a 0
                     if(this.jugador.getScore()>this.leerJugador().getScore()){
                         this.guardarJugador();
                     }
                     isPlaying = false;
                 }
                 this.puntos=Integer.toString(this.jugador.getScore());
-                System.out.println("Puntuaje: "+ this.jugador.getScore());
             }
             batch.end();
         }
@@ -312,7 +308,6 @@ public class Juego {
                     this.guardarJugador();
                 }
                 isPlaying=false;
-                System.out.println("Puntuaje: "+ this.jugador.getScore());
             }
             batch.end();
         }
@@ -353,9 +348,9 @@ public class Juego {
             objeto.close();
             System.out.println("SAVED SUCCESFULLY...");
         }catch(FileNotFoundException e){
-            System.out.println("ERROR..."+ e.getMessage());
+            System.out.println("FileNotFoundException..."+ e.getMessage());
         }catch(IOException e){
-            System.out.println("ERROR..."+e.getMessage());
+            System.out.println("IOException..."+e.getMessage());
         }
     }
     public Jugador leerJugador(){
@@ -366,11 +361,11 @@ public class Juego {
             player = (Jugador)objeto.readObject();
             //System.out.println("READ SUCCESFULLY...");
         }catch(FileNotFoundException e){
-            System.out.println("ERROR..."+e.getMessage());
+            System.out.println("FileNotFoundException..."+e.getMessage());
         }catch(IOException e){
-            System.out.println("ERROR..."+e.getMessage());
+            System.out.println("IOException..."+e.getMessage());
         }catch (ClassNotFoundException e){
-            System.out.println("ERROR..."+e.getMessage());
+            System.out.println("ClassNotFoundException..."+e.getMessage());
         }
         return player;
     }
@@ -381,14 +376,22 @@ public class Juego {
 
     public void resetGame(){
         this.jugador.setScore(0);
+        puntos = "0";
         this.isPlaying=true;
-        for(int i = 0;i<arrayVirus.size();i++){
-            arrayVirus.remove(i);
+        pAuxH=0;
+        pAuxT=0;
+        for(int i = 0;i<arrayVH.size();i++){
+            arrayVH.remove(i);
         }
-        arrayVirus.add(new VH(200,30));
-        arrayVirus.add(new VT(150,70));
-        arrayVirus.add(new VT(300,10));
-
+        for(int i = 0;i<arrayVT.size();i++){
+            arrayVT.remove(i);
+        }
+        for(int i =0;i<arrayPastilla.size();i++){
+            arrayPastilla.remove(i);
+        }
+        for(int i = 0;i<arrayGlobulo.size();i++){
+            arrayGlobulo.remove(i);
+        }
     }
 
     public Jugador getJugador(){

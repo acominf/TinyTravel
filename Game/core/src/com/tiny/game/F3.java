@@ -42,8 +42,5 @@ public class F3{
     public void move(){
         this.setY(this.getY()+1);
     }
-    public Texture getImage(){
-        return membrana;
-    }
 }
 

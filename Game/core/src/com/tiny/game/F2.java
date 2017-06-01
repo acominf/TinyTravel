@@ -41,7 +41,4 @@ public class F2 {
     public void dibuja2(SpriteBatch batch){batch.draw(membrana2,x,y);}
     public void dibuja3(SpriteBatch batch){batch.draw(membrana3,x,y);}
     public void move(){this.setY(this.getY()+1);}
-    public Texture getImage(){
-        return membrana;
-    }
 }
