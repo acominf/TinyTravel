@@ -29,7 +29,7 @@ Pastillas: Alimentan al jugador con 20 puntos.
 
 ### Pantallas de Juego
 
-![Menú](https://raw.githubusercontent.com/acominf/TinyTravel/master/Game/core/assets/meu.jpg)
+![Menú](https://raw.githubusercontent.com/acominf/TinyTravel/master/Game/core/assets/menu.jpg)
 
 ![Ayuda](https://raw.githubusercontent.com/acominf/TinyTravel/master/Game/core/assets/Ayuda.jpg)
 
